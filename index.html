@@ -295,7 +295,7 @@
       <div class="resultado-icone indisponivel">📍</div>
       <h1>Ainda não chegamos aí</h1>
       <div class="aviso-area indisponivel">
-        No momento a SKYSERVICE atende apenas o <strong>estado de São Paulo</strong>. Assim que expandirmos pra outros estados, você será um dos primeiros a saber!
+        No momento a SKYSERVICE atende apenas a <strong>capital de São Paulo</strong>. Assim que expandirmos pra outras regiões, você será um dos primeiros a saber!
       </div>
     </div>
 
@@ -348,7 +348,7 @@
   function verificarRegiao() {
     const regiao = document.getElementById('select-regiao').value;
 
-    if (regiao === 'outro-estado') {
+    if (regiao === 'outro-estado' || regiao === 'interior') {
       mostrarTela('tela-fora-area');
       return;
     }
