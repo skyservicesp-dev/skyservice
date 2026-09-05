@@ -304,9 +304,27 @@
 
 <script>
   const linksWhatsapp = {
-    entregas: "https://wa.link/gedo79",
-    instalacao: "https://wa.link/0pr74c",
-    limpeza: "https://wa.link/1g84lo"
+    entregas: {
+      sul: "https://w.app/9ymfdh",
+      leste: "https://w.app/3uznpn",
+      oeste: "https://w.app/sbvoml",
+      norte: "https://w.app/yduvca",
+      centro: "https://w.app/mygydv"
+    },
+    instalacao: {
+      sul: "https://w.app/eqxhuh",
+      leste: "https://w.app/xvayaf",
+      oeste: "https://w.app/sui1pn",
+      norte: "https://w.app/edv8af",
+      centro: "https://w.app/cbppml"
+    },
+    limpeza: {
+      sul: "https://w.app/ypeoj1",
+      leste: "https://w.app/7xwut6",
+      oeste: "https://w.app/j5bnek",
+      norte: "https://w.app/a0xoxp",
+      centro: "https://w.app/06cwaq"
+    }
   };
 
   const nomesServico = {
@@ -354,7 +372,7 @@
     }
 
     document.getElementById('resultado-texto').textContent = mensagensResultado[servicoAtual];
-    document.getElementById('botao-whatsapp').href = linksWhatsapp[servicoAtual];
+    document.getElementById('botao-whatsapp').href = linksWhatsapp[servicoAtual][regiao];
 
     mostrarTela('tela-resultado');
   }
